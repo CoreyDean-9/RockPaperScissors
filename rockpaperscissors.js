@@ -15,45 +15,45 @@ function getComputerChoice(x) {
 }
 console.log(getComputerChoice(x));
 
-//human stuff
-// let userInput = prompt("Please enter your choice : (Rock, Paper, or Scissors): ");
 
+
+//human stuff
 while (true) {
     let userInput = prompt("Please enter your choice : (Rock, Paper, or Scissors): ");
-    //if function true break function?
+    //if function true break function
     if (getHumanChoice(userInput)){
-        break;
+        break; 
     }
 }
 function getHumanChoice(userInput) {
         
     switch (userInput.toLowerCase()) {
         case "rock":
-            console.log("You chose Rock!");
-            break;
+            console.log("You chose Rock!")
+            return "Rock";
         case "paper":
             console.log("You chose Paper!");
-            break;
+            return "Paper";
         case "scissors":
-            console.log("You chose Scirrors!");
-            break;
+            console.log("You chose Scissors!");
+            return "Scissors";
         default:
              console.log("Invalid Response. Try again!")
              break;
     }
 }
-console.log(getHumanChoice(userInput));
 
 //keeping track of score. humanScore, computerScore, # of rounds?
-// let humanScore = 0;
-// let computerScore = 0;
-// let numRounds = 0;
+let humanScore = 0;
+let computerScore = 0;
+let numRounds = 0;
 
-// function playRound(getComputerChoice, getHumanChoice) {
-//     switch (userInput = Rock){
-//         case x = Rock:
-//             console.log(confirm("There was a tie this round, SHOOT again!"));
-//     }
+function playRound(getComputerChoice, getHumanChoice) {
+    switch (getHumanChoice) {
+        case getComputerChoice === "Rock":
+            console.log(confirm("There was a tie this round, SHOOT again!"));
+            return 
+    }
 
-// }
-// playRound(x, userInput);
+}
+playRound(getComputerChoice, getHumanChoice);
